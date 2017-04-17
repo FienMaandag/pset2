@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Selected"; ObjectID = "5KI-fA-fTf"; */
+"5KI-fA-fTf.text" = "Selected";
+
+/* Class = "UILabel"; text = "The object of the game is to produce something that sounds totally ridiculous, so don't give yourself a headache searching for hidden truths. Got it?\n\nAt the top, you will see a bunch of word descriptions followed by blank spaces. Type your word in the blanks. The words ought to match the description of the word on the left."; ObjectID = "Av2-AA-qEl"; */
+"Av2-AA-qEl.text" = "The object of the game is to produce something that sounds totally ridiculous, so don't give yourself a headache searching for hidden truths. Got it?\n\nAt the top, you will see a bunch of word descriptions followed by blank spaces. Type your word in the blanks. The words ought to match the description of the word on the left.";
+
+/* Class = "UIButton"; normalTitle = "Clothes"; ObjectID = "EKN-sQ-673"; */
+"EKN-sQ-673.normalTitle" = "Clothes";
+
+/* Class = "UILabel"; text = "Choose a story"; ObjectID = "Jy3-E4-AnC"; */
+"Jy3-E4-AnC.text" = "Choose a story";
+
+/* Class = "UIButton"; normalTitle = "Tarzan"; ObjectID = "Mbn-bZ-lCe"; */
+"Mbn-bZ-lCe.normalTitle" = "Tarzan";
+
+/* Class = "UIButton"; normalTitle = "GET STARTED!"; ObjectID = "VXK-jD-PTF"; */
+"VXK-jD-PTF.normalTitle" = "GET STARTED!";
+
+/* Class = "UIButton"; normalTitle = "University"; ObjectID = "mEh-XA-rgF"; */
+"mEh-XA-rgF.normalTitle" = "University";
+
+/* Class = "UIButton"; normalTitle = "Simple"; ObjectID = "sW2-eI-XQW"; */
+"sW2-eI-XQW.normalTitle" = "Simple";
+
+/* Class = "UIButton"; normalTitle = "Dance"; ObjectID = "ugQ-Ij-Ev2"; */
+"ugQ-Ij-Ev2.normalTitle" = "Dance";
