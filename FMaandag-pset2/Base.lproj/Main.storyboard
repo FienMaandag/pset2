@@ -22,26 +22,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="T1A-x6-rM2">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T1A-x6-rM2">
                                 <rect key="frame" x="20" y="64" width="335" height="583"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="qpZ-hS-blR">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="291.5"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lhx-Bq-VK2">
-                                        <rect key="frame" x="0.0" y="332" width="335" height="251"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="335" height="291.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECw-wj-gNY">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="203"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNN-A8-TLf">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="166.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <string key="text">The object of the game is to produce something that sounds totally ridiculous, so don't give yourself a headache searching for hidden truths. Got it?
 
 At the top, you will see a bunch of word descriptions followed by blank spaces. Type your word in the blanks. The words ought to match the description of the word on the left.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXK-jD-PTF">
-                                                <rect key="frame" x="0.0" y="203" width="335" height="48"/>
+                                                <rect key="frame" x="0.0" y="166.5" width="335" height="125"/>
                                                 <state key="normal" title="GET STARTED!"/>
                                                 <connections>
                                                     <segue destination="WNX-H8-g00" kind="show" id="QNd-Sm-R6x"/>
@@ -80,38 +80,43 @@ At the top, you will see a bunch of word descriptions followed by blank spaces. 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dqi-Fi-4an">
-                                <rect key="frame" x="16" y="64" width="343" height="190"/>
+                                <rect key="frame" x="16" y="64" width="343" height="220"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sW2-eI-XQW">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Simple"/>
                                         <connections>
                                             <segue destination="eO0-ZP-WLj" kind="show" identifier="simple" id="09V-we-zIN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbn-bZ-lCe">
-                                        <rect key="frame" x="0.0" y="40" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="46" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Tarzan"/>
                                         <connections>
                                             <segue destination="eO0-ZP-WLj" kind="show" identifier="tarzan" id="Omd-6y-sih"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEh-XA-rgF">
-                                        <rect key="frame" x="0.0" y="80" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="92" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="University"/>
                                         <connections>
                                             <segue destination="eO0-ZP-WLj" kind="show" identifier="uni" id="ObI-ad-kxj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKN-sQ-673">
-                                        <rect key="frame" x="0.0" y="120" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="138" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Clothes"/>
                                         <connections>
                                             <segue destination="eO0-ZP-WLj" kind="show" identifier="clothes" id="zj6-jx-wUd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugQ-Ij-Ev2">
-                                        <rect key="frame" x="0.0" y="160" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="184" width="343" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Dance"/>
                                         <connections>
                                             <segue destination="eO0-ZP-WLj" kind="show" identifier="dance" id="bQS-1F-NyA"/>
@@ -145,10 +150,10 @@ At the top, you will see a bunch of word descriptions followed by blank spaces. 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xmt-Ac-SDj">
-                                <rect key="frame" x="0.0" y="74" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="174"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zNO-fd-PJO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="what word" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S7G-CV-PAb">
                                                 <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
@@ -157,7 +162,8 @@ At the top, you will see a bunch of word descriptions followed by blank spaces. 
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILl-5z-y0t">
-                                                <rect key="frame" x="345" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="345" y="0.0" width="30" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="OK"/>
                                                 <connections>
                                                     <action selector="next:" destination="eO0-ZP-WLj" eventType="touchUpInside" id="Stp-vw-kIW"/>
@@ -166,20 +172,21 @@ At the top, you will see a bunch of word descriptions followed by blank spaces. 
                                         </subviews>
                                     </stackView>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eay-n5-UiS">
-                                        <rect key="frame" x="122" y="40" width="131" height="30"/>
+                                        <rect key="frame" x="101.5" y="46" width="172" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Show me my story!"/>
                                         <connections>
                                             <segue destination="sSl-ve-Cvi" kind="show" id="EiR-OQ-dFT"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="type word" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBf-ax-ftX">
-                                        <rect key="frame" x="10" y="80" width="355" height="30"/>
+                                        <rect key="frame" x="10" y="92" width="355" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXm-UF-8s5">
-                                        <rect key="frame" x="10" y="120" width="355" height="30"/>
+                                        <rect key="frame" x="10" y="138" width="355" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

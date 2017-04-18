@@ -37,7 +37,7 @@ class ThirdViewController: UIViewController {
             self.story = Story(stream: fileContent)
             
             // set wordType, wordsLeft and wordInput
-            wordType.text = "please enter a \(story!.getNextPlaceholder())"
+            wordType.text = "Please enter a \(story!.getNextPlaceholder())"
             wordsLeft.text = "\(story!.getPlaceholderRemainingCount()) word(s) left"
             wordInput.placeholder = story?.getNextPlaceholder()
         }
