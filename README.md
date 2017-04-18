@@ -2,4 +2,4 @@
 
 
 
-![Screenshot](\doc\screenshot_madlib.png)
+![Screenshot](\doc\screenshot_madlib.PNG)
